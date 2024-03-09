@@ -1,0 +1,61 @@
+:root {
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-gray-100: #eaeaea;
+  --color-gray-200: #dadada;
+  --color-gray-300: #c2c2c2;
+  --color-gray-400: #a9a9a9;
+  --color-gray-500: #929292;
+  --color-gray-600: #696969;
+  --color-gray-700: #444444;
+  --color-gray-800: #272727;
+  --color-gray-900: #000000;
+  --color-sand-100: #fae0bf;
+  --color-sand-200: #e4cbad;
+  --color-sand-300: #cab497;
+  --color-sand-400: #ae9a80;
+  --color-sand-500: #85745e;
+  --color-sand-600: #6d5d4a;
+  --color-sand-700: #493c2f;
+  --color-sand-800: #2e251d;
+  --color-sand-900: #1e1612;
+  --color-wine-700: #750303;
+  --color-wine-800: #580303;
+  --color-wine-900: #3a0202;
+
+  --gradient-warm-dark: linear-gradient(
+    180deg,
+    #fae0bf 0%,
+    #5f503e 50%,
+    #1d1511 100%
+  );
+  --gradient-gold: linear-gradient(
+    180deg,
+    #c8870a 0%,
+    #ffbf19 50%,
+    #c8870a 100%
+  );
+  --gradient-silver: linear-gradient(
+    180deg,
+    #8c8c8c 0%,
+    #d1d1d1 50%,
+    #8c8c8c 100%
+  );
+  --gradient-bronze: linear-gradient(
+    180deg,
+    #8a4f0b 0%,
+    #d0832b 50%,
+    #8a4f0b 100%
+  );
+}
+
+/* Minimal CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'League Spartan', system-ui, sans-serif;
+}
