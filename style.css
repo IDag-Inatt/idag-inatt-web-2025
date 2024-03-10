@@ -56,6 +56,62 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 0.0625rem;
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'League Spartan', system-ui, sans-serif;
+  font-size: 16rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24rem;
+}
+
+section {
+  padding: 128rem 0;
+}
+
+.hero-section {
+  background: var(--gradient-warm-dark);
+  color: var(--color-sand-700);
+}
+
+.intro-section {
+  background: var(--color-sand-900);
+  color: var(--color-sand-300);
+}
+
+.idag-section {
+  background: var(--color-sand-200);
+  color: var(--color-sand-700);
+}
+
+.inatt-section {
+  background: var(--color-sand-900);
+  color: var(--color-sand-300);
+}
+
+.schedule-section {
+  background: var(--color-sand-800);
+  color: var(--color-sand-300);
+}
+
+.sponsors-section {
+  background: var(--color-sand-200);
+  color: var(--color-sand-700);
+}
+
+.team-section {
+  background: var(--color-sand-800);
+  color: var(--color-sand-300);
+}
+
+.footer {
+  background: var(--color-sand-900);
+  color: var(--color-sand-300);
 }
