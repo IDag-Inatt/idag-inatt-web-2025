@@ -142,6 +142,64 @@ section {
   height: 100vh;
 }
 
+.newspaper-wrapper {
+  width: 75vw;
+  margin-top: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+  mask-image: url('img/hero-mask-desktop.png');
+  mask-position: bottom center;
+  mask-size: 130% 130%;
+  mask-repeat: no-repeat;
+}
+
+.newspaper {
+  background-image: url('img/paper.jpg');
+  background-size: cover;
+  padding: 5%;
+}
+
+.newspaper__pretitle {
+  font-family: 'Playfair Display', serif;
+  font-size: max(24rem, 1.2vw);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.newspaper__title {
+  font-family: 'Imbue', serif;
+  font-size: 13vw;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  border-top: 4px solid var(--color-sand-700);
+  border-bottom: 4px solid var(--color-sand-700);
+  margin: 16rem 0;
+}
+
+.newspaper__subtitle {
+  font-family: 'Playfair Display', serif;
+  font-size: max(32rem, 2vw);
+  font-weight: 700;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.newspaper__body {
+  font-family: 'Redacted Script';
+  font-size: 1vw;
+  color: var(--color-sand-500);
+  display: flex;
+  gap: 16rem;
+  margin-top: 64rem;
+}
+
+.newspaper__body p {
+  margin-bottom: 16rem;
+}
+
 /* ---------- Intro ---------- */
 
 .intro-section {
