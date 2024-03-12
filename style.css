@@ -207,6 +207,44 @@ section {
   color: var(--color-sand-300);
 }
 
+.intro-section p {
+  font-family: 'Playfair Display', serif;
+  font-size: 24rem;
+  color: var(--color-sand-300);
+  margin-bottom: 64rem;
+}
+
+.intro-section strong {
+  font-weight: 700;
+  font-style: italic;
+  color: var(--color-sand-100);
+}
+
+.intro-section a {
+  color: inherit;
+}
+
+.sponsor-marquee {
+  display: flex;
+  align-items: center;
+  gap: 32rem;
+  overflow-x: scroll;
+}
+
+.sponsor-marquee img {
+  height: 48rem;
+  flex-grow: 0;
+  flex-shrink: 0;
+  filter: invert(1) hue-rotate(180deg);
+  opacity: 0.5;
+}
+
+@media screen and (min-width: 900px) {
+  .intro-section p {
+    font-size: 48rem;
+  }
+}
+
 /* ---------- IDag ---------- */
 
 .idag-section {
