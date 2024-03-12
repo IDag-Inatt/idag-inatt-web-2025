@@ -140,28 +140,35 @@ section {
   background: var(--gradient-warm-dark);
   color: var(--color-sand-700);
   height: 100vh;
+  overflow: hidden;
 }
 
 .newspaper-wrapper {
-  width: 75vw;
-  margin-top: 20vh;
-  margin-left: auto;
-  margin-right: auto;
-  mask-image: url('img/hero-mask-desktop.png');
+  mask-image: url('img/hero-mask.png');
   mask-position: bottom center;
-  mask-size: 130% 130%;
+  mask-size: 130vw 100%;
   mask-repeat: no-repeat;
+  padding-top: 20vh;
+  height: 100%;
 }
 
 .newspaper {
+  max-width: 1600px;
+  margin: 0 16rem;
   background-image: url('img/paper.jpg');
   background-size: cover;
-  padding: 5%;
+  padding: min(5vw, 80rem);
+}
+
+@media screen and (min-width: 900px) {
+  .newspaper-wrapper {
+    margin: 0 10vw;
+  }
 }
 
 .newspaper__pretitle {
   font-family: 'Playfair Display', serif;
-  font-size: max(24rem, 1.2vw);
+  font-size: clamp(16rem, 1.5vw, 32rem);
   font-weight: 700;
   letter-spacing: 0.08em;
   text-transform: uppercase;
@@ -169,7 +176,7 @@ section {
 
 .newspaper__title {
   font-family: 'Imbue', serif;
-  font-size: 13vw;
+  font-size: min(256rem, 13vw);
   font-weight: 500;
   text-align: center;
   letter-spacing: 0.2em;
@@ -181,23 +188,16 @@ section {
 
 .newspaper__subtitle {
   font-family: 'Playfair Display', serif;
-  font-size: max(32rem, 2vw);
+  font-size: clamp(24rem, 3vw, 48rem);
   font-weight: 700;
   text-align: right;
   text-transform: uppercase;
 }
 
 .newspaper__body {
-  font-family: 'Redacted Script';
-  font-size: 1vw;
-  color: var(--color-sand-500);
-  display: flex;
-  gap: 16rem;
+  width: 100%;
+  height: auto;
   margin-top: 64rem;
-}
-
-.newspaper__body p {
-  margin-bottom: 16rem;
 }
 
 /* ---------- Intro ---------- */
