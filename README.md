@@ -2,7 +2,7 @@
 
 Detta repository innehåller källkoden till hemsidan för 2024 års upplaga av IDag & Inatt.
 
-> 🔗 **Besök hemsidan på [idaginatt.interaktion.nu](idaginatt.interaktion.nu)**
+> 🔗 **Besök hemsidan på [idag.interaktion.nu](idag.interaktion.nu)**
 
 ## Vad är IDag & Inatt?
 
