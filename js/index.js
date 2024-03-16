@@ -26,6 +26,16 @@ menuLinks.forEach((link) => {
   });
 });
 
+// ---------- Hero sponsor marquee ----------
+
+// Marquee scrolling effect
+gsap.to('.sponsor-marquee__inner', {
+  x: '-33.33%', // One third because we have three copies of the sponsor logos
+  duration: 15,
+  repeat: -1,
+  ease: 'linear',
+});
+
 // ---------- Sponsor expand button ----------
 
 const expandButtons = document.querySelectorAll('.expand-button');
