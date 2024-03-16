@@ -23,7 +23,7 @@
 
     <!-- Styles -->
     <link rel="stylesheet" href="/css/global.css" />
-    <link rel="stylesheet" href="/css/navbar.css" />
+    <link rel="stylesheet" href="/css/navbar-menu.css" />
     <link rel="stylesheet" href="/css/hero.css" />
     <link rel="stylesheet" href="/css/intro.css" />
     <link rel="stylesheet" href="/css/idag-inatt.css" />
@@ -33,7 +33,7 @@
     <link rel="stylesheet" href="/css/footer.css" />
   </head>
   <body>
-    <!-- Navbar -->
+    <!-- Desktop navbar -->
     <nav class="navbar">
       <div class="container">
         <ul class="navbar__menu">
@@ -63,6 +63,35 @@
           </div>
         </ul>
       </div>
+    </nav>
+
+    <!-- Mobile menu button -->
+    <button class="menu-button">
+      <span class="menu-button__icon material-symbols-outlined">menu</span>
+    </button>
+
+    <!-- Mobile menu -->
+    <nav class="menu">
+      <div class="menu__logo">
+        <a href="#hero"
+          ><img src="/img/idag-inatt-logo.svg" alt="IDag & Inatt"
+        /></a>
+      </div>
+      <ul class="menu__list">
+        <li class="menu__item"><a href="#idag" class="menu__link">IDag</a></li>
+        <li class="menu__item">
+          <a href="#inatt" class="menu__link">Inatt</a>
+        </li>
+        <li class="menu__item">
+          <a href="#schedule" class="menu__link">Schema</a>
+        </li>
+        <li class="menu__item">
+          <a href="#sponsors" class="menu__link">Sponsorer</a>
+        </li>
+        <li class="menu__item">
+          <a href="#team" class="menu__link">Projektgruppen</a>
+        </li>
+      </ul>
     </nav>
 
     <!-- Hero -->
