@@ -1,14 +1,5 @@
 /* ---------- IDag ---------- */
 
-.idag-section {
-  background-color: var(--color-sand-200);
-  color: var(--color-sand-700);
-}
-
-.idag-section .section-heading__pretitle {
-  color: var(--color-sand-600);
-}
-
 .idag-section .top-row__right-column p:first-child {
   color: var(--color-sand-900);
 }
@@ -18,19 +9,6 @@
 }
 
 /* ---------- Inatt ---------- */
-
-.inatt-section {
-  background-color: var(--color-sand-900);
-  color: var(--color-sand-300);
-}
-
-.inatt-section .section-heading {
-  color: var(--color-sand-100);
-}
-
-.inatt-section .section-heading__pretitle {
-  color: var(--color-sand-300);
-}
 
 .inatt-section .ticket {
   transform: rotate(5deg);

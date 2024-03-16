@@ -1,10 +1,5 @@
 /* ---------- Footer ---------- */
 
-.footer {
-  background-color: var(--color-sand-900);
-  color: var(--color-sand-300);
-}
-
 .footer__links {
   display: flex;
   flex-direction: column;

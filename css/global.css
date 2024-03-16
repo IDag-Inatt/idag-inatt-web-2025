@@ -106,6 +106,37 @@ body {
 section,
 footer {
   padding: 64rem 0;
+
+.section--light {
+  background-color: var(--color-sand-200);
+  color: var(--color-sand-700);
+}
+
+.section--light .section-heading__pretitle {
+  color: var(--color-sand-600);
+}
+
+.section--medium {
+  background-color: var(--color-sand-800);
+  color: var(--color-sand-300);
+}
+
+.section--medium .section-heading {
+  color: var(--color-sand-100);
+}
+
+.section--dark {
+  background-color: var(--color-sand-900);
+  color: var(--color-sand-300);
+}
+
+.section--dark .section-heading {
+  color: var(--color-sand-100);
+}
+
+.section--dark .section-heading__pretitle {
+  color: var(--color-sand-300);
+}
 }
 
 .section-heading {

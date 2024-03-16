@@ -1,10 +1,5 @@
 /* ---------- Sponsors ---------- */
 
-.sponsors-section {
-  background-color: var(--color-sand-200);
-  color: var(--color-sand-700);
-}
-
 .sponsors-section__newspaper {
   position: relative;
   margin-left: -24rem;

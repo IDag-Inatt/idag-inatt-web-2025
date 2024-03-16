@@ -1,14 +1,5 @@
 /* ---------- Team ---------- */
 
-.team-section {
-  background-color: var(--color-sand-800);
-  color: var(--color-sand-300);
-}
-
-.team-section .section-heading {
-  color: var(--color-sand-100);
-}
-
 .team-section .feature-list__item {
   border-color: var(--color-sand-700);
 }

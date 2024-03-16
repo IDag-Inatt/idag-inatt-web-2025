@@ -1,10 +1,5 @@
 /* ---------- Schedule ---------- */
 
-.schedule-section {
-  background-color: var(--color-sand-800);
-  color: var(--color-sand-300);
-}
-
 .schedule-section__columns {
   display: flex;
   flex-direction: column;
