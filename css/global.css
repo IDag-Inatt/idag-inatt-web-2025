@@ -115,6 +115,7 @@ footer {
   line-height: 1;
   text-transform: uppercase;
   margin-bottom: 64rem;
+  hyphens: auto;
 }
 
 .section-heading__pretitle {
