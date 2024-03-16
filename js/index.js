@@ -51,6 +51,33 @@ gsap.to('.sponsor-marquee__inner', {
   ease: 'linear',
 });
 
+// ---------- Ticket 3D hover rotation ----------
+
+const tickets = document.querySelectorAll('.ticket');
+
+tickets.forEach((ticket) => {
+  ticket.addEventListener('mousemove', (event) => {
+    const rect = ticket.getBoundingClientRect();
+    const offsetX = event.clientX - rect.left;
+    const offsetY = event.clientY - rect.top;
+    const rotateX = gsap.utils.mapRange(0, rect.width, 20, -40, offsetY);
+    const rotateY = gsap.utils.mapRange(0, rect.height, -5, 5, offsetX);
+    gsap.to(ticket, {
+      rotateX,
+      rotateY,
+      duration: 0.5,
+    });
+  });
+
+  ticket.addEventListener('mouseleave', () => {
+    gsap.to(ticket, {
+      rotateX: 0,
+      rotateY: 0,
+      duration: 1,
+    });
+  });
+});
+
 // ---------- Sponsor expand button ----------
 
 const expandButtons = document.querySelectorAll('.expand-button');
