@@ -38,7 +38,7 @@
   border-width: 2rem;
   border-style: solid;
   border-radius: 8rem;
-  padding: 32rem;
+  padding: 16rem;
 }
 
 .sponsors-section__sponsor--gold {
@@ -129,6 +129,10 @@
 
   .sponsors-section__grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .sponsors-section__sponsor {
+    padding: 24rem;
   }
 
   .sponsors-section__sponsor-tagline {
