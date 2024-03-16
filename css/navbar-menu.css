@@ -105,6 +105,12 @@
   display: flex;
 }
 
+.menu .spotlight {
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+}
+
 .menu__logo img {
   height: 40rem;
   filter: invert(1);
@@ -123,4 +129,10 @@
   color: var(--color-sand-100);
   text-decoration: none;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 900px) {
+  .menu {
+    display: none !important;
+  }
 }

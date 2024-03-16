@@ -107,6 +107,7 @@ body {
   position: relative;
   padding: 64rem 0;
   z-index: 0;
+  overflow: hidden;
 }
 
 /* Noise texture */
@@ -123,9 +124,26 @@ body {
   z-index: -1;
 }
 
+.spotlight {
+  position: absolute;
+  width: 256px;
+  height: 256px;
+  border-radius: 9999px;
+  background-color: var(--color-sand-700);
+  opacity: 0.5;
+  filter: blur(64px);
+  z-index: -2;
+  transform: translate(-50%, -50%);
+  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s;
+}
+
 .section--light {
   background-color: var(--color-sand-200);
   color: var(--color-sand-700);
+}
+
+.section--light .spotlight {
+  background-color: var(--color-white);
 }
 
 .section--light .section-heading__pretitle {
@@ -184,9 +202,13 @@ body {
 }
 
 @media screen and (min-width: 900px) {
-  section,
-  footer {
+  .section {
     padding: 128rem 0;
+  }
+
+  .spotlight {
+    width: 512px;
+    height: 512px;
   }
 
   .section-heading__pretitle {
