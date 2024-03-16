@@ -48,7 +48,7 @@ expandButtons.forEach((button) => {
       sponsor.removeAttribute('data-expanded');
       button.querySelector('.expand-button__text').textContent = 'Visa mer';
     } else {
-      sponsor.setAttribute('data-expanded');
+      sponsor.setAttribute('data-expanded', '');
       button.querySelector('.expand-button__text').textContent = 'Visa mindre';
     }
   });
