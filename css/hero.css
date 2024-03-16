@@ -17,7 +17,6 @@
 }
 
 .newspaper {
-  max-width: 1600px;
   margin: 0 16rem;
   background-image: url('/img/paper.jpg');
   background-size: cover;
