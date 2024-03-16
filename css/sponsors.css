@@ -4,7 +4,7 @@
   position: relative;
   margin-left: -24rem;
   margin-right: -24rem;
-  background-image: url('/img/paper.jpg');
+  background-image: url('../img/paper.jpg');
   background-size: cover;
   padding: 24rem;
 }

@@ -8,7 +8,7 @@
 }
 
 .newspaper-wrapper {
-  mask-image: url('/img/hero-mask.png');
+  mask-image: url('../img/hero-mask.png');
   mask-position: bottom center;
   mask-size: 130vw 100%;
   mask-repeat: no-repeat;
@@ -18,7 +18,7 @@
 
 .newspaper {
   margin: 0 16rem;
-  background-image: url('/img/paper.jpg');
+  background-image: url('../img/paper.jpg');
   background-size: cover;
   padding: min(5vw, 80rem);
 }
