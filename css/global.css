@@ -78,7 +78,7 @@ body {
 }
 
 .button {
-  background: var(--color-sand-100);
+  background-color: var(--color-sand-100);
   color: var(--color-sand-700);
   width: fit-content;
   display: flex;

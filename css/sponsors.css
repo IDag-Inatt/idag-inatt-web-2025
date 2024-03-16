@@ -1,7 +1,7 @@
 /* ---------- Sponsors ---------- */
 
 .sponsors-section {
-  background: var(--color-sand-200);
+  background-color: var(--color-sand-200);
   color: var(--color-sand-700);
 }
 
@@ -97,7 +97,7 @@
   place-items: center;
   width: 32rem;
   height: 32rem;
-  background: var(--color-sand-300);
+  background-color: var(--color-sand-300);
   border-radius: 4rem;
 }
 

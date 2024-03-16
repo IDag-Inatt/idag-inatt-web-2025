@@ -63,13 +63,13 @@
   height: 48rem;
   cursor: pointer;
   z-index: 100;
-  background: var(--color-sand-600);
+  background-color: var(--color-sand-600);
   border: none;
   border-radius: 9999px;
 }
 
 .menu-button[data-open] {
-  background: var(--color-sand-800);
+  background-color: var(--color-sand-800);
 }
 
 .menu-button__icon {
@@ -96,7 +96,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background: var(--color-sand-900);
+  background-color: var(--color-sand-900);
   color: var(--color-sand-100);
   z-index: 99;
 }

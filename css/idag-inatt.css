@@ -1,7 +1,7 @@
 /* ---------- IDag ---------- */
 
 .idag-section {
-  background: var(--color-sand-200);
+  background-color: var(--color-sand-200);
   color: var(--color-sand-700);
 }
 
@@ -20,7 +20,7 @@
 /* ---------- Inatt ---------- */
 
 .inatt-section {
-  background: var(--color-sand-900);
+  background-color: var(--color-sand-900);
   color: var(--color-sand-300);
 }
 
