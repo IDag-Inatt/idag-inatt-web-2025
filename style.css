@@ -105,7 +105,6 @@ body {
 
 .navbar {
   display: none;
-  mix-blend-mode: difference;
 }
 
 @media (min-width: 900px) {
@@ -115,7 +114,9 @@ body {
     width: 100%;
     top: 64rem;
     left: 50%;
+    z-index: 100;
     transform: translateX(-50%);
+    mix-blend-mode: difference;
   }
 }
 
