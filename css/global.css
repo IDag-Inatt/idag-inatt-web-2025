@@ -110,7 +110,7 @@ footer {
 
 .section-heading {
   font-family: 'Imbue', serif;
-  font-size: 64rem;
+  font-size: clamp(64rem, 10vw, 192rem);
   font-weight: 700;
   line-height: 1;
   text-transform: uppercase;
@@ -130,10 +130,6 @@ footer {
   section,
   footer {
     padding: 128rem 0;
-  }
-
-  .section-heading {
-    font-size: 192rem;
   }
 
   .section-heading__pretitle {
