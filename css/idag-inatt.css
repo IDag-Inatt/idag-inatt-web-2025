@@ -1,0 +1,53 @@
+/* ---------- IDag ---------- */
+
+.idag-section {
+  background: var(--color-sand-200);
+  color: var(--color-sand-700);
+}
+
+.idag-section .section-heading__pretitle {
+  color: var(--color-sand-600);
+}
+
+.idag-section .top-row__right-column p:first-child {
+  color: var(--color-sand-900);
+}
+
+.idag-section .feature-list__title-column h3 {
+  color: var(--color-sand-900);
+}
+
+/* ---------- Inatt ---------- */
+
+.inatt-section {
+  background: var(--color-sand-900);
+  color: var(--color-sand-300);
+}
+
+.inatt-section .section-heading {
+  color: var(--color-sand-100);
+}
+
+.inatt-section .section-heading__pretitle {
+  color: var(--color-sand-300);
+}
+
+.inatt-section .ticket {
+  transform: rotate(5deg);
+}
+
+.inatt-section .ticket__content {
+  color: var(--color-sand-900);
+}
+
+.inatt-section .top-row__right-column p:first-child {
+  color: var(--color-sand-100);
+}
+
+.inatt-section .feature-list__item {
+  border-color: var(--color-sand-700);
+}
+
+.inatt-section .feature-list__title-column h3 {
+  color: var(--color-sand-100);
+}

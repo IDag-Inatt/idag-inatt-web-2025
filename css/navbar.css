@@ -1,0 +1,52 @@
+/* ---------- Navbar ---------- */
+
+.navbar {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  .navbar {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 64rem;
+    left: 50%;
+    z-index: 100;
+    transform: translateX(-50%);
+    mix-blend-mode: difference;
+  }
+}
+
+.navbar__logo img {
+  height: 40rem;
+  filter: invert(1);
+}
+
+.navbar__menu {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.navbar__menu-left,
+.navbar__menu-right {
+  display: flex;
+  align-items: center;
+  gap: 32rem;
+  width: 100%;
+}
+
+.navbar__menu-right {
+  justify-content: flex-end;
+}
+
+.navbar__menu-item {
+  color: var(--color-sand-700);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.navbar__menu-link {
+  color: var(--color-white);
+  text-decoration: none;
+}
