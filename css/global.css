@@ -70,6 +70,17 @@ body {
   line-height: 1.4;
 }
 
+a,
+button {
+  color: inherit;
+  transition: opacity 0.2s;
+}
+
+a:not(.button):hover,
+button:not(.button):hover {
+  opacity: 0.5;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -87,6 +98,12 @@ body {
   padding: 24rem;
   border-radius: 8rem;
   text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.button:hover {
+  background-color: var(--color-sand-700);
+  color: var(--color-sand-100);
 }
 
 .button__text {
