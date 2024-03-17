@@ -32,6 +32,8 @@ const spotlights = document.querySelectorAll(
   '.spotlight:not(.spotlight--static)'
 );
 
+// Add hover effect if user hasn't requested reduced motion in their OS settings
+if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
   spotlights.forEach((spotlight) => {
     document.addEventListener('mousemove', (event) => {
       const parentRect = spotlight.parentElement.getBoundingClientRect();
@@ -44,6 +46,7 @@ const spotlights = document.querySelectorAll(
       });
     });
   });
+}
 
 // ---------- Hero sponsor marquee ----------
 
@@ -59,28 +62,34 @@ gsap.to('.sponsor-marquee__inner', {
 
 const tickets = document.querySelectorAll('.ticket');
 
-tickets.forEach((ticket) => {
-  ticket.addEventListener('mousemove', (event) => {
-    const rect = ticket.getBoundingClientRect();
-    const offsetX = event.clientX - rect.left;
-    const offsetY = event.clientY - rect.top;
-    const rotateX = gsap.utils.mapRange(0, rect.width, 20, -40, offsetY);
-    const rotateY = gsap.utils.mapRange(0, rect.height, -5, 5, offsetX);
-    gsap.to(ticket, {
-      rotateX,
-      rotateY,
-      duration: 0.5,
-    });
-  });
+// Add hover effect if user hasn't requested reduced motion in their OS settings
+if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  tickets.forEach((ticket) => {
+    // When moving mouse over ticket, rotate it
+    ticket.addEventListener('mousemove', (event) => {
+      const rect = ticket.getBoundingClientRect();
+      const offsetX = event.clientX - rect.left;
+      const offsetY = event.clientY - rect.top;
+      const rotateX = gsap.utils.mapRange(0, rect.width, 20, -40, offsetY);
+      const rotateY = gsap.utils.mapRange(0, rect.height, -5, 5, offsetX);
 
-  ticket.addEventListener('mouseleave', () => {
-    gsap.to(ticket, {
-      rotateX: 0,
-      rotateY: 0,
-      duration: 1,
+      gsap.to(ticket, {
+        rotateX,
+        rotateY,
+        duration: 0.5,
+      });
+    });
+
+    // When moving mouse out of ticket, reset rotation
+    ticket.addEventListener('mouseleave', () => {
+      gsap.to(ticket, {
+        rotateX: 0,
+        rotateY: 0,
+        duration: 1,
+      });
     });
   });
-});
+}
 
 // ---------- Sponsor expand button ----------
 
