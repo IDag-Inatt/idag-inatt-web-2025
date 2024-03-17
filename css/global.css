@@ -124,6 +124,22 @@ body {
   z-index: -1;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  .section::after {
+    animation: noise 0.5s infinite steps(5, end);
+  }
+}
+
+/* Animation to make noise look like static */
+@keyframes noise {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 10% 10%;
+  }
+}
+
 .spotlight {
   position: absolute;
   width: 256px;
