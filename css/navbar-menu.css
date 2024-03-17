@@ -9,7 +9,7 @@
     display: flex;
     position: fixed;
     width: 100%;
-    top: 64rem;
+    top: 32rem;
     left: 50%;
     z-index: 100;
     transform: translateX(-50%);
