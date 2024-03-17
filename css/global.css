@@ -134,7 +134,6 @@ body {
   filter: blur(64px);
   z-index: -2;
   transform: translate(-50%, -50%);
-  transition: transform cubic-bezier(0.215, 0.61, 0.355, 1) 0.8s;
 }
 
 .section--light {

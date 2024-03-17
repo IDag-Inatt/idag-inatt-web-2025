@@ -32,14 +32,18 @@ const spotlights = document.querySelectorAll(
   '.spotlight:not(.spotlight--static)'
 );
 
-spotlights.forEach((spotlight) => {
-  document.addEventListener('mousemove', (event) => {
-    const parentRect = spotlight.parentElement.getBoundingClientRect();
-    const offsetX = event.clientX - parentRect.left;
-    const offsetY = event.clientY - parentRect.top;
-    spotlight.style.transform = `translate(calc(${offsetX}px - 50%), calc(${offsetY}px - 50%))`;
+  spotlights.forEach((spotlight) => {
+    document.addEventListener('mousemove', (event) => {
+      const parentRect = spotlight.parentElement.getBoundingClientRect();
+
+      gsap.to(spotlight, {
+        x: event.clientX - parentRect.left,
+        y: event.clientY - parentRect.top,
+        duration: 1,
+        ease: 'power2.out',
+      });
+    });
   });
-});
 
 // ---------- Hero sponsor marquee ----------
 
