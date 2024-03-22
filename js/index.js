@@ -17,7 +17,7 @@ menuButton.addEventListener('click', () => {
 });
 
 // When clicking a link in the menu, close the menu
-const menuLinks = document.querySelectorAll('.menu__link');
+const menuLinks = document.querySelectorAll('a');
 menuLinks.forEach((link) => {
   link.addEventListener('click', () => {
     menu.removeAttribute('data-open');
