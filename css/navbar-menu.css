@@ -86,7 +86,7 @@
 /* ---------- Mobile menu ---------- */
 
 .menu {
-  display: none;
+  display: flex;
   position: fixed;
   gap: 64rem;
   flex-direction: column;
@@ -99,10 +99,12 @@
   background-color: var(--color-sand-900);
   color: var(--color-sand-100);
   z-index: 99;
+  transform: translateX(100%);
+  transition: transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 
 .menu[data-open] {
-  display: flex;
+  transform: translateX(0);
 }
 
 .menu .spotlight {
