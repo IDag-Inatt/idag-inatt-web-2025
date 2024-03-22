@@ -26,6 +26,32 @@ menuLinks.forEach((link) => {
   });
 });
 
+// ---------- Hero entrance animation ----------
+
+const timeline = gsap.timeline();
+
+timeline
+  .from(
+    '.hero-section .newspaper',
+    {
+      y: '25%',
+      opacity: 0,
+      transform: 'rotate(10deg)',
+      duration: 2,
+      ease: 'power2.out',
+    },
+    '+=0.2'
+  )
+  .from(
+    '.navbar',
+    {
+      y: '-50%',
+      opacity: 0,
+      duration: 0.5,
+    },
+    '-=1'
+  );
+
 // ---------- Spotlight mouse tracking using gsap ----------
 
 const spotlights = document.querySelectorAll(
