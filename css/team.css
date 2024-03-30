@@ -19,3 +19,22 @@
 .team-section .feature-list__body-column strong {
   color: var(--color-sand-100);
 }
+
+.team-member {
+  display: flex;
+  align-items: center;
+  gap: 16rem;
+}
+
+.team-member img {
+  width: 64rem;
+  height: 64rem;
+  border-radius: 9999px;
+}
+
+@media screen and (min-width: 900px) {
+  .team-member img {
+    width: 80rem;
+    height: 80rem;
+  }
+}
