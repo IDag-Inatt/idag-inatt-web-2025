@@ -125,7 +125,6 @@ button:not(.button):hover {
   position: relative;
   padding: 64rem 0;
   z-index: 0;
-  overflow: hidden;
 }
 
 /* Noise texture */
@@ -156,6 +155,15 @@ button:not(.button):hover {
   100% {
     background-position: 10% 10%;
   }
+}
+
+.spotlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
 }
 
 .spotlight {
@@ -362,6 +370,11 @@ button:not(.button):hover {
   .feature-list__item {
     flex-direction: row;
     gap: 0;
+  }
+
+  .feature-list__title-column > :first-child {
+    position: sticky;
+    top: 96rem;
   }
 
   .feature-list__title-column h3 {
