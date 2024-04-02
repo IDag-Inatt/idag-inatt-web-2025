@@ -285,8 +285,8 @@ button:not(.button):hover {
   font-size: 24rem;
 }
 
-.top-row__right-column p:not(:first-child) {
-  margin-top: 24rem;
+.top-row__right-column {
+  gap: 24rem;
 }
 
 @media screen and (min-width: 900px) {
