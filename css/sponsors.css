@@ -32,7 +32,7 @@
   list-style: none;
   border-width: 2rem;
   border-style: solid;
-  border-radius: 8rem;
+  border-color: var(--color-sand-200);
   padding: 16rem;
 }
 
