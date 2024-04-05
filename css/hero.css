@@ -5,14 +5,15 @@
   color: var(--color-sand-700);
   height: 100vh;
   overflow: hidden;
+  padding-bottom: 0;
 }
 
 .newspaper-wrapper {
   mask-image: url('../img/hero-mask.png');
   mask-position: bottom center;
-  mask-size: 130vw 100%;
+  mask-size: 130vw 120%;
   mask-repeat: no-repeat;
-  padding-top: 20vh;
+  padding-top: 0;
   height: 100%;
 }
 
@@ -26,6 +27,13 @@
 @media screen and (min-width: 900px) {
   .newspaper-wrapper {
     margin: 0 10vw;
+  }
+}
+
+@media screen and (min-height: 900px) {
+  .newspaper-wrapper {
+    mask-position: bottom center;
+    padding-top: 10vh;
   }
 }
 
