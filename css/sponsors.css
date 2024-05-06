@@ -100,7 +100,6 @@
   font: inherit;
   text-transform: uppercase;
   display: flex;
-  display: none; /* TODO: Remove this when sponsor info is available */
   align-items: center;
   gap: 8rem;
   background: none;
