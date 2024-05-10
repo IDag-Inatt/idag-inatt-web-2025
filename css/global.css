@@ -302,6 +302,10 @@ button:not(.button):hover {
   transform: rotate(-5deg);
 }
 
+.ticket:hover {
+  opacity: 1 !important;
+}
+
 .ticket img {
   display: block;
   width: 100%;
@@ -334,6 +338,12 @@ button:not(.button):hover {
   justify-content: space-between;
   font-family: 'Playfair Display', serif;
   font-weight: 700;
+}
+
+.ticket__location-row p {
+  font-size: clamp(16rem, 4vw, 24rem);
+  line-height: 1;
+  margin-left: 8rem;
 }
 
 .feature-list__item {
