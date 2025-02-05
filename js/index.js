@@ -28,51 +28,51 @@ menuLinks.forEach((link) => {
 
 // ---------- Hero entrance animation ----------
 
-const timeline = gsap.timeline();
+// const timeline = gsap.timeline();
 
-timeline
-  .from(
-    '.hero-section .newspaper',
-    {
-      y: '25%',
-      opacity: 0,
-      transform: 'rotate(10deg)',
-      duration: 2,
-      ease: 'power2.out',
-    },
-    '+=0.2'
-  )
-  .from(
-    '.navbar',
-    {
-      y: '-50%',
-      opacity: 0,
-      duration: 0.5,
-    },
-    '-=1'
-  );
+// timeline
+//   .from(
+//     '.hero-section .newspaper',
+//     {
+//       y: '25%',
+//       opacity: 0,
+//       transform: 'rotate(10deg)',
+//       duration: 2,
+//       ease: 'power2.out',
+//     },
+//     '+=0.2'
+//   )
+//   .from(
+//     '.navbar',
+//     {
+//       y: '-50%',
+//       opacity: 0,
+//       duration: 0.5,
+//     },
+//     '-=1'
+//   );
 
 // ---------- Spotlight mouse tracking using gsap ----------
 
-const spotlights = document.querySelectorAll(
-  '.spotlight:not(.spotlight--static)'
-);
+// const spotlights = document.querySelectorAll(
+//   '.spotlight:not(.spotlight--static)'
+// );
 
-// Add hover effect if user hasn't requested reduced motion in their OS settings
-if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-  spotlights.forEach((spotlight) => {
-    document.addEventListener('mousemove', (event) => {
-      const parentRect = spotlight.parentElement.getBoundingClientRect();
+// // Add hover effect if user hasn't requested reduced motion in their OS settings
+// if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+//   spotlights.forEach((spotlight) => {
+//     document.addEventListener('mousemove', (event) => {
+//       const parentRect = spotlight.parentElement.getBoundingClientRect();
 
-      gsap.to(spotlight, {
-        x: event.clientX - parentRect.left,
-        y: event.clientY - parentRect.top,
-        duration: 1,
-        ease: 'power2.out',
-      });
-    });
-  });
-}
+//       gsap.to(spotlight, {
+//         x: event.clientX - parentRect.left,
+//         y: event.clientY - parentRect.top,
+//         duration: 1,
+//         ease: 'power2.out',
+//       });
+//     });
+//   });
+// }
 
 // ---------- Hero sponsor marquee ----------
 

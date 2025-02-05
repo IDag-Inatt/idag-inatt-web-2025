@@ -1,0 +1,145 @@
+/* ---------- Variables ---------- */
+
+:root {
+  --autumn-100: #ffbf97;
+  --autumn-200: #561f08;
+  --spring-100: #c6f8a1;
+  --spring-200: #7da156;
+  --spring-300: #577b30;
+  --summer-100: #ffdd81;
+  --summer-200: #fad369;
+  --winter-100: #a3dcff;
+  --winter-200: #3eb5ff;
+
+  --gradient-warm-dark: linear-gradient(
+    180deg,
+    #fae0bf 0%,
+    #5f503e 50%,
+    #1d1511 100%
+  );
+  --gradient-gold: linear-gradient(
+    180deg,
+    #c8870a 0%,
+    #ffbf19 50%,
+    #c8870a 100%
+  );
+  --gradient-silver: linear-gradient(
+    180deg,
+    #8c8c8c 0%,
+    #d1d1d1 50%,
+    #8c8c8c 100%
+  );
+  --gradient-bronze: linear-gradient(
+    180deg,
+    #8a4f0b 0%,
+    #d0832b 50%,
+    #8a4f0b 100%
+  );
+}
+
+/* ---------- Global ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 0.0625rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Molengo', sans-serif;
+  font-size: 20rem;
+  line-height: 1.4;
+  background-color: var(--spring-100);
+}
+
+a,
+button {
+  color: inherit;
+  transition: opacity 0.2s;
+}
+
+a:not(.button):hover,
+button:not(.button):hover {
+  opacity: 0.5;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24rem;
+}
+
+.button {
+  background-color: var(--color-sand-100);
+  color: var(--color-sand-700);
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 8rem;
+  padding: 24rem;
+  border-radius: 8rem;
+  text-decoration: none;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.button:hover {
+  background-color: var(--color-sand-700);
+  color: var(--color-sand-100);
+}
+
+.button__text {
+  line-height: 1;
+  text-transform: uppercase;
+  transform: translateY(10%);
+}
+
+@media screen and (min-width: 900px) {
+  .button__text {
+    font-size: 24rem;
+  }
+}
+
+/* ---------- Section ---------- */
+
+.section {
+  position: relative;
+  padding: 64rem 0;
+  z-index: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .section::after {
+    animation: noise 0.5s infinite steps(5, end);
+  }
+}
+
+/* Animation to make noise look like static */
+@keyframes noise {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 10% 10%;
+  }
+}
+
+.spotlight-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+@media screen and (min-width: 900px) {
+  .section {
+    padding: 128rem 0;
+  }
+}
