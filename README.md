@@ -18,7 +18,7 @@ Hemsidan är byggd med HTML, CSS och JavaScript. Frontend-ramverk har undvikits 
 
 ### Hosting
 
-Hosting sker genom [NETLIFY](https://www.netlify.com).
+Hosting sker genom [NETLIFY](https://www.netlify.com) och sköttes detta år av [Marcus%20Billman](mailto:hello@marcusbillman.com).
 
 ### Kodformatering
 
@@ -28,4 +28,6 @@ Koden är formaterad med tillägget [Prettier](https://marketplace.visualstudio.
 
 Den student som nästa år är ansvarig för att utveckla hemsidan kan förslagsvis skapa en fork av detta repository, och bör ta kontakt med föregåede års ansvariga för att få tillgång till GitHub-organisationen.
 
-För att peka vår domän till den nya hemsidan behövs kontakt med programansvarig som har möjlighet att ändra detta. 
+För att peka vår domän till den nya hemsidan behövs kontakt med programansvarig som har möjlighet att ändra detta.
+
+Kom ihåg att repot måste vara public för att kunna deployas från Netlify!
