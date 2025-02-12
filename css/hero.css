@@ -15,7 +15,7 @@
   flex-direction: column;
   align-items: center;
   overflow: hidden;
-  height: 100vh;
+  min-height: 100vh;
   color: var(--black);
   background-color: var(--spring-50);
 }
@@ -30,7 +30,8 @@
 }
 
 .hero__icons-container {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 16rem;
   margin-top: 32rem;
   justify-content: center;
@@ -39,6 +40,21 @@
 
 .hero__icons-container img {
   height: 128rem;
+  grid-column: span 1;
+  align-self: center;
+}
+
+@media screen and (max-width: 650px) {
+  .hero__icons-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .hero__icons-container img {
+    height: 96rem;
+  }
 }
 
 .hero__icons-container .snowflake-icon {

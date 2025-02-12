@@ -39,7 +39,7 @@ nav ul li {
 nav ul li a {
     display: block;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14rem 16rem;
     text-decoration: none;
 }
 
@@ -48,6 +48,7 @@ nav ul li.right {
 }
 
 .nav-button {
+    padding: 14rem 16rem;
     display: none;
     cursor: pointer;
     flex-direction: column;
@@ -56,25 +57,31 @@ nav ul li.right {
     border: none;
     font-size: 24rem;
     line-height: 24rem;
+    z-index: 1000;
 }
 
-.fullscreen-menu.active {
-    display: block;
-}
+
 
 .fullscreen-menu {
-    display: none;
+    display: block;
     position: fixed;
-    top: 0;
+    top: -100%;
     left: 0;
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.9);
+    height: 100%;
     z-index: 999;
     color: white;
     padding: 50px 20px;
     text-align: center;
     overflow-y: auto;
+    transition: top 0.3s ease;
+}
+
+.fullscreen-menu.active {
+    top: 0;
+    transition: top 0.3 ease;
 }
 
 .fullscreen-menu ul {

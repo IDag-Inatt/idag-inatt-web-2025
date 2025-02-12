@@ -1,15 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
+    
   gsap.from(".pretitle", {
     opacity: 0,
     y: 50,
-    duration: 1.5,
+    duration: 3,
     ease: "power3.out",
   });
+
+
 
   gsap.from(".title", {
     opacity: 0,
     scale: 0.8,
-    duration: 1.5,
+    duration: 3,
     delay: 1,
     ease: "power3.out",
   });
@@ -128,13 +131,22 @@ const menuLinks = document.querySelectorAll(".navbar__link a");
 
 // När användaren klickar på hamburgermenyn
 hamburger.addEventListener("click", () => {
-    fullscreenMenu.classList.toggle("active");
-    hamburger.style("filter: invert(1)");
+    fullscreenMenu.classList.toggle('active');
+
+
+
+
+
+
+    hamburger.style.color = fullscreenMenu.classList.contains("active") ? "white" : "";
+    hamburger.innerHTML = fullscreenMenu.classList.contains("active") ? "✕" : "☰";
 });
 
 // När användaren klickar på en länk, stäng menyn
 menuLinks.forEach(link => {
     link.addEventListener("click", () => {
         fullscreenMenu.classList.remove("active");
+        hamburger.style.color = fullscreenMenu.classList.contains("active") ? "white" : "";
+        hamburger.innerHTML = fullscreenMenu.classList.contains("active") ? "✕" : "☰";
     });
 });
