@@ -18,7 +18,7 @@ Hemsidan är byggd med HTML, CSS och JavaScript. Frontend-ramverk har undvikits 
 
 ### Hosting
 
-Hosting sker genom [NETLIFY](https://www.netlify.com) och sköttes detta år av [Marcus%20Billman](mailto:hello@marcusbillman.com).
+Hosting sker genom [NETLIFY](https://www.netlify.com) och sköttes detta år av [Marcus%20Billman](mailto:hello@marcusbillman.com) i ID23.
 
 ### Kodformatering
 
