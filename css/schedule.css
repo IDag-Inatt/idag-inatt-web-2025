@@ -1,0 +1,74 @@
+.schedule-section {
+    background-color: var(--winter-100);
+}
+
+.schedule-section__columns {
+    display: flex;
+    flex-direction: column;
+    gap: 64rem;
+}
+
+.schedule-section__event {
+    padding-left: 32rem;
+}
+
+@media screen and (min-width: 900px) {
+    .schedule-section__columns {
+        flex-direction: row;
+        gap: 0;
+    }
+
+    .schedule-section__columns > * {
+        flex: 1;
+    }
+
+    .schedule-section__event {
+        padding-left: 48rem;
+    }
+}
+
+.schedule-section__timeline {
+    list-style: none;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 48rem;
+    padding: 16rem 0;
+}
+
+.schedule-section__timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 8rem;
+    width: 1rem;
+    height: 100%;
+    background-color: var(--black);
+    transform: translateX(-50%);
+}
+
+.schedule-section__event-name {
+    position: relative;
+    font-family: 'Crimson Text', serif;
+    font-size: 24rem;
+    font-weight: bold;
+}
+
+.schedule-section__event-name::before {
+    content: '';
+    position: absolute;
+    top: calc(0.6 * 1em);
+    left: -28rem;
+    width: 8rem;
+    height: 8rem;
+    background-color: var(--black);
+    border-radius: 9999px;
+}
+
+@media screen and (min-width: 900px) {
+    .schedule-section__event-name::before {
+        left: -48rem;
+        width: 16rem;
+        height: 16rem;
+    }
+}

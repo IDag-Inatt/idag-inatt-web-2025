@@ -18,18 +18,19 @@
       rel="stylesheet"
     />
 
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Molengo&display=swap" rel="stylesheet">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Molengo&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="" />
 
     <!-- Styles -->
     <link rel="stylesheet" href="css/global.css" />
-    <link rel="stylesheet" href="css/navbar-menu.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
     <link rel="stylesheet" href="css/hero.css" />
     <link rel="stylesheet" href="css/intro.css" />
     <link rel="stylesheet" href="css/idag-inatt.css" />
@@ -40,40 +41,331 @@
   </head>
   <body>
     <!-- Navbar -->
-     <nav>
-      
-     </nav>
+    <nav></nav>
 
     <!-- Hero -->
     <section class="hero-section section" id="hero">
       <div class="container">
-        <h2>IDAG OCH INATT PRESENTERAR</h2>
+        <h2 class="pretitle">IDAG OCH INATT PRESENTERAR</h2>
         <h1 class="title">ÅRSTIDERNA</h1>
+      </div>
+      <img src="img/Icons/Flower.svg" class="flower-icon lower-opacity" alt="">
+      <img src="img/Icons/Snowflake.svg" class="snowflake-icon lower-opacity" alt="">
+    </section>
+
+    <section class="intro-section section">
+      <div class="container">
+        <p>
+          IDag och Inatt är en arbetsmarknadsdag och bankett anordnad av och för
+          ID-studenter tillsammans med Umeåföretag.
+        </p>
+        <div class="sponsor-marquee"></div>
       </div>
     </section>
 
     <!-- IDag -->
-    <section class="idag-section section " id="idag">
-      
+    <section class="idag-section section" id="idag">
+      <div class="container">
+        <h2 class="section-pretitle">ARBETS&shy;MARKNADS&shy;DAGEN</h2>
+        <h2 class="section-heading">IDAG</h2>
+
+        <div class="top-row">
+          <div class="top-row-right"></div>
+          <div class="top-row-left">
+            <p class="">
+              <strong>IDAG</strong> är en konferens där studenter och företag
+              kan skapa kontakter inför exjobb eller framtida anställningar.
+            </p>
+
+            <p>
+              Målet är också att informera, inspirera och motivera studenterna
+              samt att öka sammanhållningen inom programmet.
+            </p>
+
+            <a href="#schedule" class="button">SCHEMA</a>
+          </div>
+        </div>
+
+        <ul class="feature-list">
+          <li class="feature-list__item">
+            <div class="feature-list__title"><h3>Föreläsningar</h3></div>
+            <div class="feature-list__body">
+              <p>
+                Företagen berättar om vad de gör och vad de kan erbjuda.
+                ID-studenter talar om sina upplevelser på programmet och alumner
+                berättar om sin resa efter studierna.
+              </p>
+            </div>
+          </li>
+          <li class="feature-list__item">
+            <div class="feature-list__title"><h3>Kontaktsamtal</h3></div>
+            <div class="feature-list__body">
+              <p>
+                Kontaktsamtal med företagen pågår hela dagen inför exempelvis
+                exjobb.
+              </p>
+            </div>
+          </li>
+          <li class="feature-list__item">
+            <div class="feature-list__title"><h3>Mingel</h3></div>
+            <div class="feature-list__body">
+              <p>
+                Under stora delar av dagen är det öppet för mingel med
+                studenterna och företagen.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- Inatt -->
     <section class="inatt-section section" id="inatt">
+      <div class="container">
+        <h2 class="section-pretitle">BANKETTEN</h2>
+        <h2 class="section-heading">INATT</h2>
+        <div class="top-row">
+          <div class="top-row-right"></div>
+          <div class="top-row-left">
+            <p class="">
+              <strong>INATT</strong> är en fin avslutning på läsåret med middag,
+              fotografering och underhållning.
+            </p>
+
+            <p>
+              Vi tackar av årskurs 4 och utser årets ID:are. Sedan fortsätter
+              festen tillsammans med företagen fram till stängning. Det blir en
+              kväll med mycket ID-kärlek!
+            </p>
+
+            <p>Klädkod: finkläder. Inspireras gärna av temat och epoken.</p>
+
+            <a href="#schedule" class="button">SCHEMA</a>
+          </div>
+        </div>
+
+        <ul class="feature-list">
+          <li class="feature-list__item">
+            <div class="feature-list__title"><h3>Middag</h3></div>
+            <div class="feature-list__body">
+              <p>
+                En fin trerättersmiddag med trevliga samtal för studenter,
+                lärare och företag.
+              </p>
+            </div>
+          </li>
+          <li class="feature-list__item">
+            <div class="feature-list__title"><h3>Fotografering</h3></div>
+            <div class="feature-list__body">
+              <p>
+                Alla fem årskurser får bilder tagna tillsammans med sina
+                klasser.
+              </p>
+            </div>
+          </li>
+          <li class="feature-list__item">
+            <div class="feature-list__title"><h3>Underhållning</h3></div>
+            <div class="feature-list__body">
+              <p>
+                Under stora delar av dagen är det öppet för mingel med
+                studenterna och företagen.
+              </p>
+            </div>
+          </li>
+          <li class="feature-list__item">
+            <div class="feature-list__title"><h3>Årets ID:are</h3></div>
+            <div class="feature-list__body">
+              <p>
+                Enligt årlig tradition utses en student från årskurs 4 som
+                särskilt representerar ID-andan. Röstningen är nu öppen för alla
+                ID-studenter och stänger den 15 maj!
+              </p>
+              <a href="#schedule" class="button">RÖSTA</a>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- Schema -->
     <section class="schedule-section section" id="schedule">
-    
+      <div class="container">
+        <h2 class="section-heading">SCHEMA</h2>
+        <div class="schedule-section__columns">
+          <div class="schedule-section__column">
+            <h3>IDag</h3>
+            <ul class="schedule-section__timeline">
+              <li class="schedule-section__event">
+                <p class="schedule-section__event-meta">17:00 • Start</p>
+                <p class="schedule-section__event-name">
+                  Mingel och fotografering
+                </p>
+              </li>
+              <li class="schedule-section__event">
+                <p class="schedule-section__event-meta">17:00 • Start</p>
+                <p class="schedule-section__event-name">
+                  Mingel och fotografering
+                </p>
+              </li>
+              <li class="schedule-section__event">
+                <p class="schedule-section__event-meta">17:00 • Start</p>
+                <p class="schedule-section__event-name">
+                  Mingel och fotografering
+                </p>
+              </li>
+              <li class="schedule-section__event">
+                <p class="schedule-section__event-meta">17:00 • Start</p>
+                <p class="schedule-section__event-name">
+                  Mingel och fotografering
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div class="schedule-section__column">
+            <h3>Inatt</h3>
+            <ul class="schedule-section__timeline">
+              <li class="schedule-section__event">
+                <p class="schedule-section__event-meta">17:00 • Start</p>
+                <p class="schedule-section__event-name">
+                  Mingel och fotografering
+                </p>
+              </li>
+              <li class="schedule-section__event">
+                <p class="schedule-section__event-meta">17:00 • Start</p>
+                <p class="schedule-section__event-name">
+                  Mingel och fotografering
+                </p>
+              </li>
+              <li class="schedule-section__event">
+                <p class="schedule-section__event-meta">17:00 • Start</p>
+                <p class="schedule-section__event-name">
+                  Mingel och fotografering
+                </p>
+              </li>
+              <li class="schedule-section__event">
+                <p class="schedule-section__event-meta">17:00 • Start</p>
+                <p class="schedule-section__event-name">
+                  Mingel och fotografering
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Sponsorer -->
     <section class="sponsors-section section" id="sponsors">
-  
+      <div class="container">
+        <h2 class="section-heading">SPON&shy;SORER</h2>
+        <div class="top-row">
+          <div class="top-row-left">
+            <p><strong>Under construction... 🏗️</strong></p>
+          </div>
+          <div class="top-row-right"></div>
+        </div>
+      </div>
     </section>
 
     <!-- Projektgruppen -->
     <section class="team-section section" id="team">
- 
+      <div class="container">
+        <h2 class="section-heading">PROJEKT&shyGRUPPEN</h2>
+        <div class="top-row">
+          <div class="top-row__left">
+            <p>
+              IDag & Inatt är helt och hållet
+              <strong>anordnat av ID-studenter.</strong> Här är årets team.
+            </p>
+          </div>
+          <div class="top-row__right"></div>
+        </div>
+        <ul class="feature-list">
+          <li class="feature-list__item">
+            <div class="feature-list__title-column">
+              <div>
+                <h3 class="team-header-green">Projekt&shy;ledare</h3>
+                <p>Ledning, administration, ekonomi</p>
+              </div>
+            </div>
+            <div class="feature-list__body-column">
+              <ul>
+                <li class="team-member">
+                  <img src="img/team/axelina-holmstrom.jpg" alt="" />
+                  <p><strong>Axelina Holmström</strong></p>
+                </li>
+                <li class="team-member">
+                  <img src="img/team/truls-rane.jpg" alt="" />
+                  <p><strong>Truls Rane</strong></p>
+                </li>
+              </ul>
+              <a href="mailto:projektledareidaginatt@gmail.com" target="_blank">
+                projektledareidaginatt@gmail.com
+              </a>
+            </div>
+          </li>
+          <li class="feature-list__item">
+            <div class="feature-list__title-column">
+              <div>
+                <h3 class="team-header-yellow">IDag-gruppen</h3>
+                <p>Företagskontakt, logistik</p>
+              </div>
+            </div>
+            <div class="feature-list__body-column">
+              <ul>
+                <li class="team-member">
+                  <img src="img/team/elvira-wiklund.jpg" alt="" />
+                  <p><strong>Elvira Wiklund (Gruppledare)</strong></p>
+                </li>
+                <li class="team-member">
+                  <img src="img/team/albin-everdin.jpg" alt="" />
+                  <p>Albin Everdin</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="feature-list__item">
+            <div class="feature-list__title-column">
+              <div>
+                <h3 class="team-header-orange">Inatt-gruppen</h3>
+                <p>Företagskontakt, logistik</p>
+              </div>
+            </div>
+            <div class="feature-list__body-column">
+              <ul>
+                <li class="team-member">
+                  <img src="img/team/tess-sjostrand.jpg" alt="" />
+                  <p><strong>Tess Sjöstrand (Gruppledare)</strong></p>
+                </li>
+                <li class="team-member">
+                  <img src="img/team/elis-lannerblad.jpg" alt="" />
+                  <p>Elis Lannerblad</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="feature-list__item">
+            <div class="feature-list__title-column">
+              <div>
+                <h3 class="team-header-blue">PR-gruppen</h3>
+                <p>Grafisk profil, sociala medier, webbsida</p>
+              </div>
+            </div>
+            <div class="feature-list__body-column">
+              <ul>
+                <li class="team-member">
+                  <img src="img/team/thilde-persson.jpg" alt="" />
+                  <p><strong>Thilde Persson (Gruppledare)</strong></p>
+                </li>
+                <li class="team-member">
+                  <img src="img/team/josefine-lundin.jpeg" alt="" />
+                  <p>Josefine Lundin</p>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
     <!-- Footer -->

@@ -1,5 +1,10 @@
 /* ---------- Footer ---------- */
 
+.footer {
+  background-color: var(--black);
+  color: var(--white);
+}
+
 .footer .spotlight {
   bottom: -75%;
   left: 50%;
@@ -24,7 +29,7 @@
 }
 
 .footer__copyright {
-  color: var(--color-sand-500);
+  color: var(--white);
   margin-top: 32rem;
 }
 

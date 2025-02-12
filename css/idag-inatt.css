@@ -1,0 +1,17 @@
+.idag-section {
+    background-color: var(--summer-100);
+}
+
+.idag-section .feature-list__item:not(:first-child) {
+    border-color: black;
+}
+
+.inatt-section {
+    background-color: var(--autumn-200);
+    color: var(--autumn-100)
+}
+
+.inatt-section .feature-list__item:not(:first-child) {
+    border-color: var(--autumn-100);
+}
+
