@@ -1,4 +1,4 @@
-# IDag & Inatt hemsida 2024
+# IDag & Inatt hemsida 2025
 
 Detta repository innehåller källkoden till hemsidan för 2025 års upplaga av IDag & Inatt.
 
