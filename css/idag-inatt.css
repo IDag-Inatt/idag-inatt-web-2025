@@ -15,3 +15,11 @@
     border-color: var(--autumn-100);
 }
 
+.inatt-section .button {
+    background-color: var(--autumn-100);
+}
+
+.inatt-section .button:hover {
+    background-color: var(--autumn-150);
+  }
+  

@@ -38,28 +38,84 @@
     <link rel="stylesheet" href="css/sponsors.css" />
     <link rel="stylesheet" href="css/team.css" />
     <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/marquee.css" />
   </head>
   <body>
     <!-- Navbar -->
-    <nav></nav>
+    <nav class="navbar">
+      <div class="container">
+        <a href="#hero" class="navbar__logo">
+          <img src="img/idag-inatt-logo.svg" alt="IDag & Inatt" />
+        </a>
+        <ul class="navbar__links">
+          <li class="navbar__link">
+            <a href="#idag">IDAG</a>
+          </li>
+          <li class="navbar__link">
+            <a href="#inatt">INATT</a>
+          </li>
+          <li class="navbar__link">
+            <a href="#schedule">SCHEMA</a>
+          </li>
+          <li class="navbar__link">
+            <a href="#sponsors">SPON&shy;SORER</a>
+          </li>
+          <li class="navbar__link">
+            <a href="#team">PROJEKT&shy;GRUPPEN</a>
+          </li>
+        </ul>
+        <button class="nav-button" id="hamburger">☰</button>
+      </div>
+
+      <div class="fullscreen-menu" id="fullscreen-menu">
+        <img src="img/idag-inatt-logo.svg" alt="">
+        <ul class="menu__links">
+          <li class="navbar__link">
+            <a href="#idag">IDAG</a>
+          </li>
+          <li class="navbar__link">
+            <a href="#inatt">INATT</a>
+          </li>
+          <li class="navbar__link">
+            <a href="#schedule">SCHEMA</a>
+          </li>
+          <li class="navbar__link">
+            <a href="#sponsors">SPON&shy;SORER</a>
+          </li>
+          <li class="navbar__link">
+            <a href="#team">PROJEKT&shy;GRUPPEN</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 
     <!-- Hero -->
     <section class="hero-section section" id="hero">
       <div class="container">
         <h2 class="pretitle">IDAG OCH INATT PRESENTERAR</h2>
         <h1 class="title">ÅRSTIDERNA</h1>
-        <h1 class="title">TEST</h1>
       </div>
-      <img src="img/Icons/Flower.svg" class="flower-icon lower-opacity" alt="">
-      <img src="img/Icons/Snowflake.svg" class="snowflake-icon lower-opacity" alt="">
+      <div class="hero__icons-container">
+        <img src="img/Icons/Flower.svg" alt="" class="flower-icon" />
+        <img src="img/Icons/Sun.svg" alt="" class="sun-icon" />
+        <img src="img/Icons/Leaf.svg" alt="" class="leaf-icon" />
+        <img src="img/Icons/Snowflake.svg" alt="" class="snowflake-icon" />
+      </div>
     </section>
 
     <section class="intro-section section">
       <div class="container">
-        <p>
-          IDag och Inatt är en arbetsmarknadsdag och bankett anordnad av och för
-          ID-studenter tillsammans med Umeåföretag.
-        </p>
+        <div class="intro__content">
+          <p>
+            IDag och Inatt är en arbetsmarknadsdag och bankett anordnad av och
+            för ID-studenter tillsammans med Umeåföretag.
+          </p>
+          <img
+            src="img/arstiderna-logo-no-text.svg"
+            alt=""
+            class="arstiderna-logo"
+          />
+        </div>
         <div class="sponsor-marquee"></div>
       </div>
     </section>
@@ -117,6 +173,35 @@
             </div>
           </li>
         </ul>
+      </div>
+    </section>
+
+    <section class="marquee idag__marquee">
+      <div class="marquee__inner">
+        <div class="marquee__content"><span>IDAG</span></div>
+        <div class="marquee__content"><span>VARDAGSRUMMET</span></div>
+        <div class="marquee__content"><span>11/19</span></div>
+        <div class="marquee__content"><span>08.00 - 12.00</span></div>
+        <div class="marquee__content"><span>IDAG</span></div>
+        <div class="marquee__content"><span>VARDAGSRUMMET</span></div>
+        <div class="marquee__content"><span>11/19</span></div>
+        <div class="marquee__content"><span>08.00 - 12.00</span></div>
+        <div class="marquee__content"><span>IDAG</span></div>
+        <div class="marquee__content"><span>VARDAGSRUMMET</span></div>
+        <div class="marquee__content"><span>11/19</span></div>
+        <div class="marquee__content"><span>08.00 - 12.00</span></div>
+        <div class="marquee__content"><span>IDAG</span></div>
+        <div class="marquee__content"><span>VARDAGSRUMMET</span></div>
+        <div class="marquee__content"><span>11/19</span></div>
+        <div class="marquee__content"><span>08.00 - 12.00</span></div>
+        <div class="marquee__content"><span>IDAG</span></div>
+        <div class="marquee__content"><span>VARDAGSRUMMET</span></div>
+        <div class="marquee__content"><span>11/19</span></div>
+        <div class="marquee__content"><span>08.00 - 12.00</span></div>
+        <div class="marquee__content"><span>IDAG</span></div>
+        <div class="marquee__content"><span>VARDAGSRUMMET</span></div>
+        <div class="marquee__content"><span>11/19</span></div>
+        <div class="marquee__content"><span>08.00 - 12.00</span></div>
       </div>
     </section>
 
@@ -188,6 +273,39 @@
       </div>
     </section>
 
+    <section class="marquee inatt__marquee">
+      <div class="marquee__inner">
+        <div class="marquee__content"><span>INATT</span></div>
+        <div class="marquee__content"><span>DROSKAN</span></div>
+        <div class="marquee__content"><span>11/19</span></div>
+        <div class="marquee__content"><span>20.00 - SENT</span></div>
+        <div class="marquee__content"><span>INATT</span></div>
+        <div class="marquee__content"><span>DROSKAN</span></div>
+        <div class="marquee__content"><span>11/19</span></div>
+        <div class="marquee__content"><span>20.00 - SENT</span></div>
+        <div class="marquee__content"><span>INATT</span></div>
+        <div class="marquee__content"><span>DROSKAN</span></div>
+        <div class="marquee__content"><span>11/19</span></div>
+        <div class="marquee__content"><span>20.00 - SENT</span></div>
+        <div class="marquee__content"><span>INATT</span></div>
+        <div class="marquee__content"><span>DROSKAN</span></div>
+        <div class="marquee__content"><span>11/19</span></div>
+        <div class="marquee__content"><span>20.00 - SENT</span></div>
+        <div class="marquee__content"><span>INATT</span></div>
+        <div class="marquee__content"><span>DROSKAN</span></div>
+        <div class="marquee__content"><span>11/19</span></div>
+        <div class="marquee__content"><span>20.00 - SENT</span></div>
+        <div class="marquee__content"><span>INATT</span></div>
+        <div class="marquee__content"><span>DROSKAN</span></div>
+        <div class="marquee__content"><span>11/19</span></div>
+        <div class="marquee__content"><span>20.00 - SENT</span></div>
+        <div class="marquee__content"><span>INATT</span></div>
+        <div class="marquee__content"><span>DROSKAN</span></div>
+        <div class="marquee__content"><span>11/19</span></div>
+        <div class="marquee__content"><span>20.00 - SENT</span></div>
+      </div>
+    </section>
+
     <!-- Schema -->
     <section class="schedule-section section" id="schedule">
       <div class="container">
@@ -251,19 +369,6 @@
               </li>
             </ul>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Sponsorer -->
-    <section class="sponsors-section section" id="sponsors">
-      <div class="container">
-        <h2 class="section-heading">SPON&shy;SORER</h2>
-        <div class="top-row">
-          <div class="top-row-left">
-            <p><strong>Under construction... 🏗️</strong></p>
-          </div>
-          <div class="top-row-right"></div>
         </div>
       </div>
     </section>

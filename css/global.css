@@ -1,13 +1,19 @@
 /* ---------- Variables ---------- */
 
 :root {
+  --autumn-50: #ffd3b7;
   --autumn-100: #ffbf97;
+  --autumn-150: #fcceb0;
   --autumn-200: #561f08;
+  --spring-50: #E4FFCF;
   --spring-100: #c6f8a1;
   --spring-200: #7da156;
   --spring-300: #577b30;
+  --summer-50: #ffecb8;
   --summer-100: #ffdd81;
+  --summer-150: #fce196;
   --summer-200: #fad369;
+  --winter-50: #caebff;
   --winter-100: #a3dcff;
   --winter-200: #3eb5ff;
   --black: #000000;
@@ -97,7 +103,7 @@ button:not(.button):hover {
 }
 
 .button:hover {
-  background-color: var(--summer-100);
+  background-color: var(--summer-150);
 }
 
 .button__text {
@@ -111,6 +117,8 @@ button:not(.button):hover {
     font-size: 24rem;
   }
 }
+
+
 
 /* ---------- Section ---------- */
 

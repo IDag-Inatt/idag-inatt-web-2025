@@ -1,52 +1,80 @@
-
 .title {
-    font-family: "Crimson Text", serif;
-    font-weight: bold;
-    font-size: min(256rem, 13vw);
-
+  font-family: "Crimson Text", serif;
+  font-weight: bold;
+  font-size: min(256rem, 13vw);
 }
 
 .pretitle {
-    font-family: "Crimson Text", serif;
-    font-weight: bold;
-    font-size: 15rem;
+  font-family: "Crimson Text", serif;
+  font-weight: bold;
+  font-size: 20rem;
 }
 
 .hero-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    height: 100vh;
-    color: var(--white);
-    background-color: var(--spring-200);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  height: 100vh;
+  color: var(--black);
+  background-color: var(--spring-50);
 }
 
 .hero-section .container {
-    text-align: center;
-}
-
-.hero-section img {
-    z-index: -1;
-    position: absolute;
-    transform: rotate(37deg);
-}
-
-.hero-section .flower-icon {
-    top: 0;
-    right: 0;
-}
-.hero-section .flower-icon {
-    top: 0;
-    right: 0;
-}
-
-.hero-section .snowflake-icon {
-    top: 0;
-    left: 0;
-    width: 640rem;
+  text-align: center;
+  margin-top: 72rem;
 }
 
 .lower-opacity {
-    opacity: 0.1;
+  opacity: 0.1;
+}
+
+.hero__icons-container {
+  display: flex;
+  gap: 16rem;
+  margin-top: 32rem;
+  justify-content: center;
+  padding-bottom: 32rem;
+}
+
+.hero__icons-container img {
+  height: 128rem;
+}
+
+.hero__icons-container .snowflake-icon {
+  filter: brightness(0) saturate(100%) invert(54%) sepia(94%) saturate(666%)
+    hue-rotate(175deg) brightness(101%) contrast(101%);
+}
+
+.hero__icons-container .sun-icon {
+  filter: brightness(0) saturate(100%) invert(90%) sepia(56%) saturate(666%) hue-rotate(320deg) brightness(99%) contrast(97%)
+}
+
+.hero__icons-container .leaf-icon {
+  filter: brightness(0) saturate(100%) invert(69%) sepia(21%) saturate(954%) hue-rotate(338deg) brightness(98%) contrast(94%)
+}
+
+.hero__icons-container .flower-icon {
+  filter: brightness(0) saturate(100%) invert(39%) sepia(82%) saturate(295%) hue-rotate(46deg) brightness(94%) contrast(95%)
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+@keyframes slowSpin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); } /* Gör en hel rotation */
+}
+
+@keyframes sway {
+    0% { transform: rotate(-10deg); }
+    100% { transform: rotate(10deg); }
+}
+
+@keyframes flowerSwing {
+    0% { transform: rotate(-5deg) translateY(0px); }
+    50% { transform: rotate(5deg) translateY(-3px); }
+    100% { transform: rotate(-5deg) translateY(0px); }
 }

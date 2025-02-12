@@ -1,0 +1,41 @@
+.idag__marquee {
+    background-color: var(--summer-200);
+}
+
+.inatt__marquee {
+    background-color: var(--autumn-100);
+
+}
+
+.marquee {
+    display: flex;
+    overflow: hidden; /* Dölj överflödigt innehåll */
+    padding: 8rem 0;
+    border-top: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+    position: relative;
+    font-family: "Century Gothic", sans-serif;
+    font-weight: 100;
+}
+
+.marquee__inner {
+    display: flex;
+    flex-wrap: nowrap;
+    animation: marquee 15s linear infinite;
+    width: max-content; /* Gör att innehållet aldrig klipps av */
+}
+
+.marquee__content {
+    flex: 0 0 auto;
+    min-width: max-content;
+    border-right: 1px solid var(--black);
+    padding: 0 16rem;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+/* Animering som rullar hela den dubblerade innehållsbredden */
+@keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
