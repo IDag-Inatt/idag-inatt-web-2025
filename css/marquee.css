@@ -28,10 +28,15 @@
 .marquee__content {
     flex: 0 0 auto;
     min-width: max-content;
-    border-right: 1px solid var(--black);
+    
     padding: 0 16rem;
     display: flex;
     flex-wrap: nowrap;
+    align-items: center;
+}
+
+.marquee__content img {
+    height: 24rem;
 }
 
 /* Animering som rullar hela den dubblerade innehållsbredden */

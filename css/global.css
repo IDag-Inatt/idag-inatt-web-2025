@@ -158,8 +158,14 @@ button:not(.button):hover {
 .section-pretitle {
   font-family: "Century Gothic", sans-serif;
   font-weight: 100;
-  font-size: clamp(14rem, 10vw, 32rem);
+  font-size: 32rem;
   letter-spacing: 4.8rem;
+}
+
+@media screen and (max-width: 500px) {
+  .section-pretitle {
+    font-size: 16rem;
+  }
 }
 
 /* ---------- Feature List ---------- */
