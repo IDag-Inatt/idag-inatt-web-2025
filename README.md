@@ -1,33 +1,47 @@
-# IDag & Inatt hemsida 2025
+# IDag & Inatt Hemsida 2025
 
-Detta repository innehåller källkoden till hemsidan för 2025 års upplaga av IDag & Inatt.
+Detta repository innehåller källkoden för hemsidan till 2025 års upplaga av **IDag & Inatt**.
 
-> 🔗 **Besök hemsidan på [idag.interaktion.nu](idag.interaktion.nu)**
+> 🔗 **Besök hemsidan: [idag.interaktion.nu](https://idag.interaktion.nu)**
 
-## Vad är IDag & Inatt?
+---
 
-IDag & Inatt är en arbetsmarknadsdag och bankett anordnad av studenter på [civilingenjörsprogrammet i interaktion och design](https://www.umu.se/utbildning/program/civilingenjorsprogrammet-i-interaktion-och-design/) vid Umeå universitet, i samarbete med Umeåföretag.
+## 🎭 Vad är IDag & Inatt?
 
-Hemsidan används för att marknadsföra och informera om eventet samt för att kommunicera temat som i år är _De Fyra Årstiderna_.
+**IDag & Inatt** är en arbetsmarknadsdag och bankett, anordnad av studenter på [Civilingenjörsprogrammet i Interaktion och Design](https://www.umu.se/utbildning/program/civilingenjorsprogrammet-i-interaktion-och-design/) vid Umeå universitet, i samarbete med Umeåföretag.
 
-## Teknik som används
+Hemsidan fungerar som en plattform för att marknadsföra eventet, ge information och kommunicera årets tema: **_De Fyra Årstiderna_**.
 
-### Webbteknik
+---
 
-Hemsidan är byggd med HTML, CSS och JavaScript. Frontend-ramverk har undvikits för att underlätta för framtida studenter med begränsad erfarenhet inom webbutveckling att bygga vidare på hemsidan för kommande år.
+## 🛠 Teknikstack
 
-### Hosting
+### 🌐 Webbteknik
+- **HTML, CSS och JavaScript** – Ingen frontend-ramverk används för att göra det enklare för framtida studenter att vidareutveckla hemsidan.
+- **Prettier** används för kodformatering ([VS Code-tillägg](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)).
 
-Hosting sker genom [NETLIFY](https://www.netlify.com) och sköttes detta år av [Marcus Billman](https://www.marcusbillman.com) i ID23.
+### 🚀 Hosting och Deployment
+- **Netlify** hanterar hosting ([netlify.com](https://www.netlify.com)).
+- Hosting och deployment sköttes 2025 av [Marcus Billman](https://www.marcusbillman.com) i ID23.
+- **Viktigt:** Repositoriet måste vara **publikt** för att kunna deployas via Netlify.
 
-### Kodformatering
+---
 
-Koden är formaterad med tillägget [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode) för VS Code.
+## 🔧 Vidareutveckling och underhåll
 
-## För att bygga vidare
+### 📌 För nästa ansvariga student
+- Skapa en **fork** av detta repository och arbeta vidare därifrån.
+- Ta kontakt med föregående års ansvariga, som 2025 var Nils Sjölund i ID23, för att få tillgång till GitHub-organisationen,  
 
-Den student som nästa år är ansvarig för att utveckla hemsidan kan förslagsvis skapa en fork av detta repository, och bör ta kontakt med föregåede års ansvariga för att få tillgång till GitHub-organisationen.
+### 🌍 Domän & DNS
+- För att uppdatera domänpåpekningen till en ny hemsida behövs kontakt med programansvarig.
 
-För att peka vår domän till den nya hemsidan behövs kontakt med programansvarig som har möjlighet att ändra detta.
+### ✅ Checklista för nästa års team
+✔ Forka och klona detta repo.
+✔ Gör nödvändiga designändringar.
+✔ Testa sidorna lokalt.
+✔ Deploya till Netlify.
+✔ Uppdatera domänpåpekning vid behov.
 
-Kom ihåg att repot måste vara public för att kunna deployas från Netlify!
+Lycka till med vidareutvecklingen av IDag & Inatt! 🎉
+

@@ -15,6 +15,14 @@ document.addEventListener("DOMContentLoaded", function () {
     ease: "power3.out",
   });
 
+  gsap.from(".subtitle", {
+    opacity: 0,
+    y: 25,
+    duration: 3,
+    delay: 1.5,
+    ease: "power3.out",
+  });
+
   gsap.from(".hero-section .flower-icon", {
     opacity: 0,
     rotation: -20,
