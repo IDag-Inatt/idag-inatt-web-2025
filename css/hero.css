@@ -57,22 +57,6 @@
   }
 }
 
-.hero__icons-container .snowflake-icon {
-  filter: brightness(0) saturate(100%) invert(54%) sepia(94%) saturate(666%)
-    hue-rotate(175deg) brightness(101%) contrast(101%);
-}
-
-.hero__icons-container .sun-icon {
-  filter: brightness(0) saturate(100%) invert(90%) sepia(56%) saturate(666%) hue-rotate(320deg) brightness(99%) contrast(97%)
-}
-
-.hero__icons-container .leaf-icon {
-  filter: brightness(0) saturate(100%) invert(69%) sepia(21%) saturate(954%) hue-rotate(338deg) brightness(98%) contrast(94%)
-}
-
-.hero__icons-container .flower-icon {
-  filter: brightness(0) saturate(100%) invert(39%) sepia(82%) saturate(295%) hue-rotate(46deg) brightness(94%) contrast(95%)
-}
 
 @keyframes spin {
     from { transform: rotate(0deg); }
