@@ -18,6 +18,9 @@ Hemsidan fungerar som en plattform för att marknadsföra eventet, ge informatio
 
 ### 🌐 Webbteknik
 - **HTML, CSS och JavaScript** – Ingen frontend-ramverk används för att göra det enklare för framtida studenter att vidareutveckla hemsidan.
+
+- **GSAP** - Animationsbibliotek för JavaScript
+
 - **Prettier** används för kodformatering ([VS Code-tillägg](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)).
 
 ### 🚀 Hosting och Deployment
