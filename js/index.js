@@ -139,7 +139,6 @@ document.addEventListener("scroll", () => {
 
 
 /* Hamburger menu */
-
 const hamburger = document.getElementById("hamburger");
 const fullscreenMenu = document.getElementById("fullscreen-menu");
 const menuLinks = document.querySelectorAll(".navbar__link a");

@@ -60,8 +60,6 @@ nav ul li.right {
     z-index: 1000;
 }
 
-
-
 .fullscreen-menu {
     display: block;
     position: fixed;
@@ -97,7 +95,6 @@ nav ul li.right {
     text-decoration: none;
 }
 
-
 .menu__links {
     display: flex;
     flex-direction: column;
@@ -118,11 +115,9 @@ nav ul li.right {
     font-size: 24rem;
 }
 
-
-/* Media query för att visa hamburgermeny på skärmar mindre än 600px */
 @media screen and (max-width: 789px) {
     .navbar__links {
-        display: none; /* Döljer den vanliga menyn */
+        display: none;
     }
     .nav-button {
         display: flex;

@@ -65,7 +65,7 @@
 
 @keyframes slowSpin {
     from { transform: rotate(0deg); }
-    to { transform: rotate(360deg); } /* Gör en hel rotation */
+    to { transform: rotate(360deg); }
 }
 
 @keyframes sway {
