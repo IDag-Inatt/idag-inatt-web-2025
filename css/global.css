@@ -209,6 +209,7 @@ button:not(.button):hover {
   gap: 16rem;
   flex-direction: column;
   margin-bottom: 64rem;
+  justify-content: center;
 }
 
 .top-row > * > p:first-child {
