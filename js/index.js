@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ease: "power3.out",
   });
 
-  gsap.from(".hero-section .sun-icon", {
+  gsap.from(".sun-icon", {
     opacity: 0,
     rotation: 20,
     scale: 0.5,
@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ease: "power3.out",
   });
 
-  gsap.from(".hero-section .leaf-icon", {
+  gsap.from(".leaf-icon", {
     opacity: 0,
     rotation: 20,
     scale: 0.5,
@@ -165,3 +165,6 @@ menuLinks.forEach(link => {
         hamburger.innerHTML = fullscreenMenu.classList.contains("active") ? "✕" : "☰";
     });
 });
+
+
+

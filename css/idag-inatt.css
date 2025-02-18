@@ -1,5 +1,7 @@
 .idag-section {
     background-color: var(--summer-100);
+    overflow: hidden;
+    position: relative;
 }
 
 .idag-section .feature-list__item:not(:first-child) {
@@ -8,7 +10,8 @@
 
 .inatt-section {
     background-color: var(--autumn-200);
-    color: var(--autumn-100)
+    color: var(--autumn-100);
+    overflow: hidden;
 }
 
 .inatt-section .feature-list__item:not(:first-child) {
@@ -22,4 +25,23 @@
 .inatt-section .button:hover {
     background-color: var(--autumn-150);
   }
-  
+
+  .background-icon {
+    position: absolute;
+    top: -50rem;
+    right: -50rem;
+    z-index: -2;
+    opacity: 0.5;
+  }
+
+  .inatt-section .background-icon {
+    top: -100rem;
+    right: -100rem;
+    animation: sway 10s infinite alternate;
+  }
+
+  .idag-section .background-icon {
+    top: -100rem;
+    right: -100rem;
+    animation: spin 45s infinite linear;
+  }

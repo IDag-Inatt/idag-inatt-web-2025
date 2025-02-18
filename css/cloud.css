@@ -1,0 +1,63 @@
+.cloud {
+    width: fit-content;
+    position: relative;
+    transform: rotate(-5deg);
+    transition: transform 0.3s ease;
+    color: var(--black); 
+  }
+  
+  .cloud:hover {
+    opacity: 1 !important;
+    transform: scale(1.05) rotate(-5deg);
+  }
+  
+  .cloud img {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-width: 400rem;
+  }
+  
+  .cloud__content {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 400rem;
+    padding: 15% 15% 12%;
+  }
+  
+  .cloud__content div {
+    display: flex;
+    align-items: center;
+    padding: 5rem 0;
+  }
+  
+  .cloud__content p {
+    font-size: clamp(16rem, 6vw, 32rem);
+  }
+  
+  .cloud__time-row {
+    justify-content: space-between;
+    font-family: 'Crimson Text', serif;
+    font-weight: 700;
+    border-bottom: 1px solid var(--black);
+  }
+  
+  .cloud__location-row p {
+    font-family: "Century Gothic", sans-serif;
+    font-weight: 400;
+    font-size: clamp(16rem, 4vw, 24rem);
+    line-height: 1;
+    margin-left: 8rem;
+  }
+  
+
+  @media screen and (max-width: 500px) {
+    .cloud {
+      margin-left: 0rem;
+    }    
+  }
