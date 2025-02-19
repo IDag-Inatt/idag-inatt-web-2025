@@ -23,6 +23,7 @@
   }
   
   .team-member img {
+    object-fit: cover;
     width: 64rem;
     height: 64rem;
     border-radius: 9999px;
