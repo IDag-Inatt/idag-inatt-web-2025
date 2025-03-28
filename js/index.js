@@ -81,7 +81,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const sun = document.querySelector(".sun-icon");
   if (sun) {
-    sun.style.animation = "spin 5s linear infinite";
+    sun.style.animation = "spin 15s linear infinite";
   }
 
   const snowflake = document.querySelector(".snowflake-icon");
