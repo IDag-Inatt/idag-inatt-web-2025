@@ -23,14 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     ease: "power3.out",
   });
 
-  gsap.from(".hero-section .flower-icon", {
-    opacity: 0,
-    rotation: -20,
-    scale: 0.5,
-    duration: 5,
-    delay: 0.5,
-    ease: "power3.out",
-  });
+
 
   gsap.from(".hero-section .snowflake-icon", {
     opacity: 0,
@@ -103,9 +96,14 @@ document.addEventListener("DOMContentLoaded", () => {
     leaf.style.animation = "sway 2s ease-in-out infinite alternate";
   }
 
-  const flower = document.getElementById("sponsor-flower");
-  if (flower) {
-    flower.style.animation = "flowerSwing 10s ease-in-out infinite alternate";
+  const heroflower = document.querySelector(".flower-icon");
+  if (heroflower) {
+    heroflower.style.animation = "flowerSwing 10s ease-in-out infinite alternate";
+  }
+
+  const sponsorflower = document.getElementById("sponsor-flower");
+  if (sponsorflower) {
+    sponsorflower.style.animation = "flowerSwing 10s ease-in-out infinite alternate";
   }
 });
 
