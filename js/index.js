@@ -58,6 +58,15 @@ document.addEventListener("DOMContentLoaded", function () {
     delay: 0.7,
     ease: "power3.out",
   });
+
+  gsap.from(".flower-icon", {
+    opacity: 0,
+    rotation: 20,
+    scale: 0.5,
+    duration: 5,
+    delay: 0.7,
+    ease: "power3.out",
+  });
 });
 
 
@@ -94,9 +103,9 @@ document.addEventListener("DOMContentLoaded", () => {
     leaf.style.animation = "sway 2s ease-in-out infinite alternate";
   }
 
-  const flower = document.querySelector(".flower-icon");
+  const flower = document.getElementById("sponsor-flower");
   if (flower) {
-    flower.style.animation = "flowerSwing 3s ease-in-out infinite alternate";
+    flower.style.animation = "flowerSwing 10s ease-in-out infinite alternate";
   }
 });
 
